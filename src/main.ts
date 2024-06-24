@@ -6,6 +6,8 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
+// Charger les variables d'environnement depuis .env
+
 const app = createApp(App);
 
 app.use(VueAxios, axios)

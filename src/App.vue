@@ -12,7 +12,7 @@ export default defineComponent({
   name: 'App',
   components: {
     MainPage
-  }
+  },
 });
 </script>
 
