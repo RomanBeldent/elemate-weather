@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { Weather } from '../models/WeatherModel';
 
-const apiKey = '0cfdef24c20f0ff4595cfd5778fbe8f6';
+const apiKey = process.env.VUE_APP_API_KEY
 
 export async function fetchWeather(city: string): Promise<Weather | null> {
   const options = {
