@@ -1,14 +1,32 @@
 <template>
-  <div>
-    <h1>What's the weather</h1>
-    <input v-model="city" placeholder="Enter city name" />
-    <button @click="getWeather">Get Weather</button>
-    <div v-if="weather">
-      <p>City: {{ weather.city }}</p>
-      <p>Temperature: {{ weather.temperature }}°C</p>
-      <p>Weather Description: {{ weather.description }}</p>
-      <img v-if="weather.iconUrl" :src="weather.iconUrl" alt="Weather Icon" />
+  <div class="mx-auto pt-3 mt-5"
+    style="text-align: center; width: 800px; height: 500px; background: #3c558f; border-radius: 15px;">
+    <h1 class="mb-3" style="font-size: 3rem; color: white;">What's the weather</h1>
+
+    <b-form-input class="mx-auto mb-2" style="width: 70%;" v-model="city" placeholder="Enter city name" />
+    <div class="d-flex justify-content-center">
+      <b-button variant="info" @click="getWeather">Get Weather</b-button>
     </div>
+    <b-table class="mt-5" striped bordered hover v-if="weather" :items="[weather]">
+      <template #cell(city)="row">
+        {{ row.value }}
+      </template>
+      <template #cell(country)="row">
+        {{ row.value }}
+      </template>
+      <template #cell(region)="row">
+        {{ row.value }}
+      </template>
+      <template #cell(temperature)="row">
+        {{ row.value }}°C
+      </template>
+      <template #cell(description)="row">
+        {{ row.value }}
+      </template>
+      <template #cell(iconUrl)="row">
+        <b-avatar v-if="row.value" :src="row.value" size="4rem" alt="Weather Icon"></b-avatar>
+      </template>
+    </b-table>
   </div>
 </template>
 
@@ -40,4 +58,5 @@ export default defineComponent({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

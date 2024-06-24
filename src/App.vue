@@ -17,4 +17,11 @@ export default defineComponent({
 </script>
 
 <style>
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('./assets/mountains.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 </style>

@@ -19,6 +19,8 @@ export async function fetchWeather(city: string): Promise<Weather | null> {
 
     const weather: Weather = {
       city: weatherData.location.name,
+      country: weatherData.location.country,
+      region: weatherData.location.region,
       temperature: weatherData.current.temperature,
       description: weatherData.current.weather_descriptions[0],
       iconUrl: weatherData.current.weather_icons.length > 0 ? weatherData.current.weather_icons[0] : undefined,

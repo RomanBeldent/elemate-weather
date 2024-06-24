@@ -6,8 +6,6 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-// TOODO charger le dotenv ici
-
 const app = createApp(App);
 
 app.use(VueAxios, axios)

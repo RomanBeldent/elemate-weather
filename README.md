@@ -17,6 +17,8 @@ npm run serve
 
 ### Documentation
 
+https://www.npmjs.com/package/vue-axios
+
 https://stackoverflow.com/questions/50715302/how-to-use-dotenv-with-vue-js
 
-https://www.npmjs.com/package/vue-axios
+https://bootstrap-vue.org/docs/
