@@ -6,7 +6,7 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css';
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
-// Charger les variables d'environnement depuis .env
+// TOODO charger le dotenv ici
 
 const app = createApp(App);
 
