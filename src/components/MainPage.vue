@@ -1,5 +1,5 @@
 <template>
-  <h1>Elemate Pet Finder</h1>
+  <h1>What's the weather</h1>
 </template>
 
 <script lang="ts">

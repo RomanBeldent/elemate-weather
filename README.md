@@ -1,4 +1,4 @@
-# elemate-pet-finder
+# elemate-weather
 
 ## Project setup
 ```
