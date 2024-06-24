@@ -1,24 +1,22 @@
 # elemate-weather
+A short technical test for Elemate technologies company using Vue 3 & Typescript, installed via CLI.
 
 ## Project setup
 ```
 npm install
 ```
+Enter API key sent by email in .env file
+```
+VUE_APP_API_KEY=
+```
 
-### Compiles and hot-reloads for development
+### Run server
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### Documentation
 
-### Lints and fixes files
-```
-npm run lint
-```
+https://stackoverflow.com/questions/50715302/how-to-use-dotenv-with-vue-js
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+https://www.npmjs.com/package/vue-axios
